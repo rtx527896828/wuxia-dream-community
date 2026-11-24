@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Discord 交流群
+    url: https://discord.gg/YMpGPdcSJ
+    about: 闲聊、问怎么打、组队——不一定要开 issue
+  - name: 去玩（国际站）
+    url: https://wuxia-dream.tixiren.workers.dev
+    about: 浏览器里直接玩
+  - name: 去玩（中国大陆）
+    url: https://cn.wuxiameng.app
+    about: 大陆访问更快的那一份

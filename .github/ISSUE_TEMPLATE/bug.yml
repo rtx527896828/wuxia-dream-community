@@ -1,0 +1,41 @@
+name: 报 bug
+description: 游戏出错、卡住、画面不对、数值明显不对劲
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        谢谢你来报！最有用的是游戏自己导出的报告文件：标题画面或暂停菜单里点「导出存档和日志」，把下载的 `wuxia-report-….json` 文件拖到下面的框里（传不上去就先压成 zip）。
+  - type: input
+    id: where
+    attributes:
+      label: 在哪儿
+      description: 哪一关 / 城镇 / 秘境第几层 / 哪个面板
+      placeholder: 例：入梦 · 雁门关，两军阵前
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: 发生了什么
+      description: 你做了什么、看到了什么、本来以为会怎样。有截图更好。
+    validations:
+      required: true
+  - type: textarea
+    id: report
+    attributes:
+      label: 报告文件
+      description: 把「导出存档和日志」下载的 json 文件拖进来（没有也可以）
+  - type: dropdown
+    id: site
+    attributes:
+      label: 用的哪个站
+      options:
+        - 国际站 wuxia-dream.tixiren.workers.dev
+        - 大陆站 cn.wuxiameng.app
+        - 不确定
+  - type: input
+    id: browser
+    attributes:
+      label: 浏览器和设备
+      placeholder: 例：Chrome 140 / Windows 11 / RTX 3060；或 iPad Safari

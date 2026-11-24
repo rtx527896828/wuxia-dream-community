@@ -1,0 +1,16 @@
+name: 提建议
+description: 玩法、手感、数值、界面、想要的关卡或功法
+labels: [idea]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: 你的想法
+      description: 想要什么、为什么——哪里玩着不顺手，或者哪里可以更好玩
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: 和哪儿有关（可选）
+      placeholder: 例：触屏操作 / 华山论剑 / 行装谱
